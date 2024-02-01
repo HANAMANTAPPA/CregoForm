@@ -1,38 +1,119 @@
-.App {
+/* App.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
   text-align: center;
+  color: #343a40;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  display: grid;
+  gap: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-group {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #343a40;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+option {
+  background-color: #a9caee;
+  border-radius: 50%;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #4199f8;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #ea4e5d;
+  color: #fff;
+}
+
+.expression-list {
+  margin-top: 30px;
+}
+
+.expression-list h2 {
+  font-size: 18px;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.expression-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expression-list li {
+  background-color: #f8d7da;
+  border: 1px solid #d6d8db;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.expression-list li button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.expression-list li button:hover {
+  background-color: #c82333;
+}
+
+.expression-list li p {
+  margin: 0;
+  font-size: 16px;
 }
